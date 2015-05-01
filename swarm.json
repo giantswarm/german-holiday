@@ -1,0 +1,18 @@
+{
+  "app_name": "holiday",
+  "services": [
+    {
+      "service_name": "webserver",
+      "components": [
+        {
+          "component_name": "flask",
+          "image": "registry.giantswarm.io/$username/holiday",
+          "ports": [5000],
+          "domains": {
+            "$domain": 5000
+          }
+        }
+      ]
+    }
+  ]
+}

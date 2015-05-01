@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAH8/cACh3wAAgHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREREREREREREREREREREREREREREREREREREREREREREREREiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+{% if holiday %}
+<meta property="og:description" content="It is a German holiday."/>
+{% else %}
+<meta property="og:description" content="It is not a German holiday."/>
+{% endif %}
+<title>Is it a German holiday today?</title>
+</head>
+<body>
+<h2>Is it a German holiday today?
+{% if holiday %}
+  <h1>Ja.</h1>
+{% else %}
+  <h1>Nein.</h1>
+{% endif %}
+</body>
