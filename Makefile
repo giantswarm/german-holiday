@@ -1,7 +1,7 @@
 PROJECT = holiday
 REGISTRY = registry.giantswarm.io
-USERNAME :=  $(shell swarm user)
-DOMAIN = $(USERNAME)-holiday.gigantic.io
+USERNAME = giantswarm
+DOMAIN = istodayaholidayingermany.com
 
 docker-build:
 	docker build -t $(REGISTRY)/$(USERNAME)/$(PROJECT) .
