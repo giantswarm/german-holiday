@@ -32,5 +32,5 @@ When the app is running, access it at:
 
     http://<username>-holiday.gigantic.io
     
-### Is it a German Holiday?
+### So, is today a German Holiday?
 Probably.
