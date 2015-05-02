@@ -1,4 +1,4 @@
-## Is it a German Holiday?
+## Is today a German Holiday?
 This simple Giant Swarm application answers that question, and nothing more.
 
 ### Install
