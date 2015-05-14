@@ -9,7 +9,7 @@ def holiday(name=None):
 	try:
 		today = date.today()		
 
-		r = requests.get("https://sec.ipty.de/feiertag/api.php?do=isFeiertag&datum=0%s.0%s.%s&loc=NW" % (today.day, today.month, today.year) )
+		r = requests.get("https://sec.ipty.de/feiertag/api.php?do=isFeiertag&datum=%02d.%02d.%d&loc=NW" % (today.day, today.month, today.year) )
 		holiday = int(r.text)	
 		return render_template('index.html', holiday=holiday)
 	except Exception as e:
