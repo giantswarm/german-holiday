@@ -1,9 +1,4 @@
-FROM phusion/baseimage
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update -qq && \
-	apt-get install -y -q --no-install-recommends \
-	python2.7 python-pip build-essential python-dev
+FROM python:2.7
 
 RUN pip install Flask Flask-Cache requests redis
 
